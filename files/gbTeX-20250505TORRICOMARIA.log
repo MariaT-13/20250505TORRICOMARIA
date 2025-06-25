@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.4.20)  25 JUN 2025 01:59
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.4.20)  25 JUN 2025 19:27
  restricted system commands enabled.
 **pdf-20250505TORRICOMARIA.tex
 (./pdf-20250505TORRICOMARIA.tex
@@ -3028,13 +3028,13 @@ LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/sc' will be
 (Font)              scaled to size 14.15991pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/m/n' will be
 (Font)              scaled to size 16.99188pt on input line 39.
-<./media/logo-imago-ByW.png, id=104, 85.2786pt x 42.1575pt>
+<./media/logo-imago-ByW.png, id=100, 85.2786pt x 42.1575pt>
 File: ./media/logo-imago-ByW.png Graphic file (type png)
 <use ./media/logo-imago-ByW.png>
 Package luatex.def Info: ./media/logo-imago-ByW.png  used on input line 46.
 (luatex.def)             Requested size: 56.9055pt x 28.1315pt.
  [5<./media/logo-imago-ByW.png>]
-<./media/desconocido.png, id=111, 85.2786pt x 98.0463pt>
+<./media/desconocido.png, id=107, 85.2786pt x 98.0463pt>
 File: ./media/desconocido.png Graphic file (type png)
 <use ./media/desconocido.png>
 Package luatex.def Info: ./media/desconocido.png  used on input line 55.
@@ -4151,29 +4151,20 @@ LaTeX Info: Redefining \. on input line 2995.
 LaTeX Info: Redefining \% on input line 2995.
 LaTeX Info: Redefining \. on input line 2995.
 LaTeX Info: Redefining \% on input line 2995.
- [182]
-! Extra \fi.
-l.2997 \fi
-        
-I'm ignoring this; it doesn't match any \if.
 
-Package biblatex Info: Resetting trackers on input line 2999.
-
-AED: pageslts setting LastPage 
-LaTeX Info: Redefining \. on input line 3222.
-LaTeX Info: Redefining \% on input line 3222.
-LaTeX Info: Redefining \. on input line 3222.
-LaTeX Info: Redefining \% on input line 3222.
 (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-utf32be.def
 File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 )
 (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
-) [183
+) [182]
+! Extra \fi.
+l.2997 \fi
+        
+I'm ignoring this; it doesn't match any \if.
 
 
-
-]
+AED: pageslts setting LastPage 
 
 Package glossaries Warning: No \printnoidxglossary or \printnoidxglossaries
  found. (Remove \makenoidxglossaries if you don't want any glossaries.)
@@ -4203,7 +4194,7 @@ AED: pageslts setting VeryLastPage via AfterLastShipout
 AED: pageslts setting LastPages via AfterLastShipout 
 
 
-Package pageslts Info: Total number of pages is odd.
+Package pageslts Info: Total number of pages is even.
 
 
 (./pdf-20250505TORRICOMARIA.aux
@@ -4224,7 +4215,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `pdf-20250505TORRICOMARIA.out' has not change
 d.
-(rerunfilecheck)             Checksum: C5AD6395C29E58511DD96B56A36A198D;2158.
+(rerunfilecheck)             Checksum: 012F13C9E94E62D249056D15F58ACD72;2049.
 Package logreq Info: Writing requests to 'pdf-20250505TORRICOMARIA.run.xml'.
 
 \openout1 = pdf-20250505TORRICOMARIA.run.xml
@@ -4235,17 +4226,17 @@ Package logreq Info: Writing requests to 'pdf-20250505TORRICOMARIA.run.xml'.
 ### bottom level
 
 Here is how much of LuaTeX's memory you used:
- 67920 strings out of 476553
- 6947501,3417909 words of node,token memory allocated
- 6269876 words of node memory still in use:
-   22969 hlist, 409 vlist, 7556 rule, 165 ins, 3 adjust, 76687 disc, 3577 local_
-par, 354 math, 112644 glue, 83023 kern, 8514 penalty, 864 margin_kern, 492896 gl
-yph, 152322 attribute, 7035 glue_spec, 21772 attribute_list, 1 shape, 1744 write
-, 84 pdf_literal, 1830 pdf_start_link, 1839 pdf_end_link, 338 pdf_dest, 1110 pdf
-_action, 4855 pdf_colorstack, 6 pdf_setmatrix, 6 pdf_save, 6 pdf_restore nodes
-   avail lists: 1:10,2:388,3:476,4:698,5:605,6:119,7:4111,8:126,9:601,10:29,11:2
-58,12:1
- 87736 multiletter control sequences out of 65536+600000
+ 67948 strings out of 476553
+ 6947475,3417909 words of node,token memory allocated
+ 6282773 words of node memory still in use:
+   23008 hlist, 409 vlist, 7538 rule, 165 ins, 3 adjust, 76779 disc, 3590 local_
+par, 354 math, 112816 glue, 83184 kern, 8562 penalty, 869 margin_kern, 493627 gl
+yph, 153778 attribute, 7071 glue_spec, 21980 attribute_list, 1 shape, 1776 write
+, 84 pdf_literal, 1859 pdf_start_link, 1868 pdf_end_link, 338 pdf_dest, 1126 pdf
+_action, 4925 pdf_colorstack, 6 pdf_setmatrix, 6 pdf_save, 6 pdf_restore nodes
+   avail lists: 1:10,2:447,3:528,4:762,5:697,6:138,7:4634,8:126,9:675,10:29,11:3
+12,12:1
+ 87761 multiletter control sequences out of 65536+600000
  105 fonts using 28521135 bytes
  117i,15n,123p,5897b,2668s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -4259,10 +4250,10 @@ texmf-dist/fonts/opentype/ibm/plex/IBMPlexSansCondensed-SemiBold.otf></usr/share
 /texlive/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSansCondensed-Regular.otf></u
 sr/share/texlive/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusSer
 if-Regular.otf>
-Output written on pdf-20250505TORRICOMARIA.pdf (195 pages, 793706 bytes).
+Output written on pdf-20250505TORRICOMARIA.pdf (194 pages, 811880 bytes).
 
-PDF statistics: 2524 PDF objects out of 2984 (max. 8388607)
- 2154 compressed objects within 22 object streams
- 450 named destinations out of 1000 (max. 131072)
- 349 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 2535 PDF objects out of 2984 (max. 8388607)
+ 2042 compressed objects within 21 object streams
+ 453 named destinations out of 1000 (max. 131072)
+ 341 words of extra memory for PDF output out of 10000 (max. 100000000)
 
