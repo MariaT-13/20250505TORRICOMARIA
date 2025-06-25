@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.4.20)  24 JUN 2025 23:51
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.4.20)  25 JUN 2025 01:00
  restricted system commands enabled.
 **pdf-20250505TORRICOMARIA.tex
 (./pdf-20250505TORRICOMARIA.tex
@@ -2959,7 +2959,15 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'pdf-20250505TORRICOMARIA.bbl' found.
 
-(./pdf-20250505TORRICOMARIA.bbl)
+(./pdf-20250505TORRICOMARIA.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with '@7037-FONTEVECCHIA2018':
+(biblatex)                - inproceedings entry '@7037-FONTEVECCHIA2018' (./fil
+es/gbTeXbib-20250505TORRICOMARIA.bib): Invalid format '05/11/18' of date field 
+'eventdate' - ignoring.
+
+)
 Package biblatex Info: Reference section=0 on input line 470.
 Package biblatex Info: Reference segment=0 on input line 470.
 
@@ -3238,7 +3246,7 @@ LaTeX Info: Redefining \% on input line 801.
 [19]
 LaTeX Font Info:    Font shape `TU/LibertinusSerif(0)/b/n' will be
 (Font)              scaled to size 11.79993pt on input line 807.
-<./media/5fc4de8ed2896b444a05b77427e58702d4c3c68d.png, id=447, 527.9725pt x 321
+<./media/5fc4de8ed2896b444a05b77427e58702d4c3c68d.png, id=465, 527.9725pt x 321
 .2pt>
 File: ./media/5fc4de8ed2896b444a05b77427e58702d4c3c68d.png Graphic file (type p
 ng)
@@ -3371,10 +3379,10 @@ LaTeX Info: Redefining \. on input line 1122.
 LaTeX Info: Redefining \% on input line 1122.
 
 [42]
-LaTeX Info: Redefining \. on input line 1133.
-LaTeX Info: Redefining \% on input line 1133.
-LaTeX Info: Redefining \. on input line 1133.
-LaTeX Info: Redefining \% on input line 1133.
+LaTeX Info: Redefining \. on input line 1132.
+LaTeX Info: Redefining \% on input line 1132.
+LaTeX Info: Redefining \. on input line 1132.
+LaTeX Info: Redefining \% on input line 1132.
  [43]
 LaTeX Info: Redefining \. on input line 1141.
 LaTeX Info: Redefining \% on input line 1141.
@@ -4114,23 +4122,27 @@ LaTeX Info: Redefining \% on input line 2994.
 LaTeX Info: Redefining \. on input line 2994.
 LaTeX Info: Redefining \% on input line 2994.
  [178]
-LaTeX Info: Redefining \. on input line 2995.
-LaTeX Info: Redefining \% on input line 2995.
-LaTeX Info: Redefining \. on input line 2995.
-LaTeX Info: Redefining \% on input line 2995.
+LaTeX Info: Redefining \. on input line 2994.
+LaTeX Info: Redefining \% on input line 2994.
+LaTeX Info: Redefining \. on input line 2994.
+LaTeX Info: Redefining \% on input line 2994.
  [179]
+LaTeX Info: Redefining \. on input line 2995.
+LaTeX Info: Redefining \% on input line 2995.
+LaTeX Info: Redefining \. on input line 2995.
+LaTeX Info: Redefining \% on input line 2995.
+ [180]
 \openout2 = ./artcap/indiceautores.aux
- (./artcap/indiceautores.tex [180
-
-
-]
+ (./artcap/indiceautores.tex
 (./names.ind
 Package biblatex Info: Resetting trackers on input line 1.
-LaTeX Info: Redefining \. on input line 107.
-LaTeX Info: Redefining \% on input line 107.
-LaTeX Info: Redefining \. on input line 107.
-LaTeX Info: Redefining \% on input line 107.
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
  [181
+
+
 
 ]))
 LaTeX Info: Redefining \. on input line 2995.
@@ -4221,18 +4233,18 @@ Package logreq Info: Writing requests to 'pdf-20250505TORRICOMARIA.run.xml'.
 ### bottom level
 
 Here is how much of LuaTeX's memory you used:
- 67823 strings out of 476553
- 6947557,3417909 words of node,token memory allocated
- 6216581 words of node memory still in use:
-   22882 hlist, 409 vlist, 7556 rule, 165 ins, 3 adjust, 76463 disc, 3547 local_
-par, 354 math, 112056 glue, 82623 kern, 8257 penalty, 838 margin_kern, 490790 gl
-yph, 143089 attribute, 6955 glue_spec, 20453 attribute_list, 1 shape, 1486 write
-, 84 pdf_literal, 1593 pdf_start_link, 1599 pdf_end_link, 338 pdf_dest, 946 pdf_
-action, 4350 pdf_colorstack, 6 pdf_setmatrix, 6 pdf_save, 6 pdf_restore nodes
-   avail lists: 1:9,2:388,3:373,4:546,5:485,6:95,7:3228,8:84,9:473,10:29,11:192,
-12:1
- 87647 multiletter control sequences out of 65536+600000
- 107 fonts using 28740671 bytes
+ 67873 strings out of 476553
+ 6947543,3417909 words of node,token memory allocated
+ 6244377 words of node memory still in use:
+   22933 hlist, 409 vlist, 7556 rule, 165 ins, 3 adjust, 76573 disc, 3566 local_
+par, 356 math, 112433 glue, 82827 kern, 8481 penalty, 844 margin_kern, 491832 gl
+yph, 147730 attribute, 7003 glue_spec, 21116 attribute_list, 1 shape, 1620 write
+, 84 pdf_literal, 1718 pdf_start_link, 1726 pdf_end_link, 338 pdf_dest, 1033 pdf
+_action, 4618 pdf_colorstack, 6 pdf_setmatrix, 6 pdf_save, 6 pdf_restore nodes
+   avail lists: 1:11,2:388,3:434,4:630,5:565,6:113,7:3787,8:126,9:553,10:29,11:2
+36,12:1
+ 87693 multiletter control sequences out of 65536+600000
+ 107 fonts using 28740603 bytes
  117i,15n,123p,5897b,2668s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
@@ -4245,10 +4257,10 @@ texmf-dist/fonts/opentype/ibm/plex/IBMPlexSansCondensed-SemiBold.otf></usr/share
 /texlive/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSansCondensed-Regular.otf></u
 sr/share/texlive/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusSer
 if-Regular.otf>
-Output written on pdf-20250505TORRICOMARIA.pdf (195 pages, 782986 bytes).
+Output written on pdf-20250505TORRICOMARIA.pdf (195 pages, 788858 bytes).
 
-PDF statistics: 2339 PDF objects out of 2487 (max. 8388607)
- 1972 compressed objects within 20 object streams
- 442 named destinations out of 1000 (max. 131072)
+PDF statistics: 2441 PDF objects out of 2487 (max. 8388607)
+ 2073 compressed objects within 21 object streams
+ 446 named destinations out of 1000 (max. 131072)
  349 words of extra memory for PDF output out of 10000 (max. 100000000)
 
