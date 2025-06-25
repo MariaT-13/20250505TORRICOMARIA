@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.4.20)  24 JUN 2025 21:25
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2025.4.20)  24 JUN 2025 21:40
  restricted system commands enabled.
 **pdf-20250505TORRICOMARIA.tex
 (./pdf-20250505TORRICOMARIA.tex
@@ -3265,14 +3265,11 @@ LaTeX Info: Redefining \% on input line 834.
 LaTeX Info: Redefining \. on input line 834.
 LaTeX Info: Redefining \% on input line 834.
  [22]
-Overfull \vbox (2.20837pt too high) has occurred while \output is active []
-
 LaTeX Info: Redefining \. on input line 842.
 LaTeX Info: Redefining \% on input line 842.
 LaTeX Info: Redefining \. on input line 842.
 LaTeX Info: Redefining \% on input line 842.
-
-[23]
+ [23]
 LaTeX Info: Redefining \. on input line 851.
 LaTeX Info: Redefining \% on input line 851.
 LaTeX Info: Redefining \. on input line 851.
@@ -3339,7 +3336,8 @@ LaTeX Info: Redefining \. on input line 1042.
 LaTeX Info: Redefining \% on input line 1042.
 LaTeX Info: Redefining \. on input line 1042.
 LaTeX Info: Redefining \% on input line 1042.
- [36]
+
+[36]
 LaTeX Info: Redefining \. on input line 1062.
 LaTeX Info: Redefining \% on input line 1062.
 LaTeX Info: Redefining \. on input line 1062.
@@ -3349,8 +3347,7 @@ LaTeX Info: Redefining \. on input line 1072.
 LaTeX Info: Redefining \% on input line 1072.
 LaTeX Info: Redefining \. on input line 1072.
 LaTeX Info: Redefining \% on input line 1072.
-
-[38]
+ [38]
 LaTeX Info: Redefining \. on input line 1081.
 LaTeX Info: Redefining \% on input line 1081.
 LaTeX Info: Redefining \. on input line 1081.
@@ -4046,14 +4043,11 @@ LaTeX Info: Redefining \% on input line 2933.
 LaTeX Info: Redefining \. on input line 2933.
 LaTeX Info: Redefining \% on input line 2933.
  [166]
-Overfull \vbox (1.36206pt too high) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 2946.
-LaTeX Info: Redefining \% on input line 2946.
-LaTeX Info: Redefining \. on input line 2946.
-LaTeX Info: Redefining \% on input line 2946.
-
-[167]
+LaTeX Info: Redefining \. on input line 2947.
+LaTeX Info: Redefining \% on input line 2947.
+LaTeX Info: Redefining \. on input line 2947.
+LaTeX Info: Redefining \% on input line 2947.
+ [167]
 LaTeX Info: Redefining \. on input line 2965.
 LaTeX Info: Redefining \% on input line 2965.
 LaTeX Info: Redefining \. on input line 2965.
@@ -4071,7 +4065,8 @@ LaTeX Info: Redefining \. on input line 2991.
 LaTeX Info: Redefining \% on input line 2991.
 LaTeX Info: Redefining \. on input line 2991.
 LaTeX Info: Redefining \% on input line 2991.
- [171] [172
+
+[171] [172
 
 ]
 Package biblatex Info: Resetting trackers on input line 2991.
@@ -4131,10 +4126,10 @@ LaTeX Info: Redefining \% on input line 2995.
 ]
 (./names.ind
 Package biblatex Info: Resetting trackers on input line 1.
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
+LaTeX Info: Redefining \. on input line 111.
+LaTeX Info: Redefining \% on input line 111.
+LaTeX Info: Redefining \. on input line 111.
+LaTeX Info: Redefining \% on input line 111.
  [181
 
 ]))
@@ -4226,17 +4221,17 @@ Package logreq Info: Writing requests to 'pdf-20250505TORRICOMARIA.run.xml'.
 ### bottom level
 
 Here is how much of LuaTeX's memory you used:
- 67752 strings out of 476553
- 6947409,3417909 words of node,token memory allocated
- 6176390 words of node memory still in use:
-   22798 hlist, 409 vlist, 7556 rule, 165 ins, 3 adjust, 76257 disc, 3518 local_
-par, 352 math, 111616 glue, 82310 kern, 8119 penalty, 825 margin_kern, 488977 gl
-yph, 136985 attribute, 6881 glue_spec, 19581 attribute_list, 1 shape, 1308 write
-, 84 pdf_literal, 1415 pdf_start_link, 1420 pdf_end_link, 338 pdf_dest, 836 pdf_
-action, 3969 pdf_colorstack, 6 pdf_setmatrix, 6 pdf_save, 6 pdf_restore nodes
-   avail lists: 1:8,2:388,3:328,4:486,5:413,6:86,7:2794,8:84,9:419,10:29,11:196,
-12:1
- 87583 multiletter control sequences out of 65536+600000
+ 67767 strings out of 476553
+ 6947433,3417909 words of node,token memory allocated
+ 6186281 words of node memory still in use:
+   22812 hlist, 409 vlist, 7556 rule, 165 ins, 3 adjust, 76304 disc, 3524 local_
+par, 354 math, 111715 glue, 82390 kern, 8136 penalty, 827 margin_kern, 489399 gl
+yph, 138574 attribute, 6893 glue_spec, 19808 attribute_list, 1 shape, 1350 write
+, 84 pdf_literal, 1468 pdf_start_link, 1473 pdf_end_link, 338 pdf_dest, 869 pdf_
+action, 4079 pdf_colorstack, 6 pdf_setmatrix, 6 pdf_save, 6 pdf_restore nodes
+   avail lists: 1:10,2:388,3:346,4:516,5:423,6:89,7:2913,8:84,9:440,10:29,11:162
+,12:1
+ 87597 multiletter control sequences out of 65536+600000
  107 fonts using 28740535 bytes
  117i,15n,123p,5897b,2668s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -4250,10 +4245,10 @@ texmf-dist/fonts/opentype/ibm/plex/IBMPlexSansCondensed-SemiBold.otf></usr/share
 /texlive/texmf-dist/fonts/opentype/ibm/plex/IBMPlexSansCondensed-Regular.otf></u
 sr/share/texlive/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusSer
 if-Regular.otf>
-Output written on pdf-20250505TORRICOMARIA.pdf (195 pages, 775195 bytes).
+Output written on pdf-20250505TORRICOMARIA.pdf (195 pages, 776903 bytes).
 
-PDF statistics: 2207 PDF objects out of 2487 (max. 8388607)
- 1841 compressed objects within 19 object streams
- 435 named destinations out of 1000 (max. 131072)
+PDF statistics: 2244 PDF objects out of 2487 (max. 8388607)
+ 1878 compressed objects within 19 object streams
+ 436 named destinations out of 1000 (max. 131072)
  349 words of extra memory for PDF output out of 10000 (max. 100000000)
 
