@@ -35,30 +35,23 @@
 \begin{document}
 \frontmatter
 
+\ifPDF
 \input{./artcap/inicio-frontmatter.tex}
 \Author{Sumario}
 \tableofcontents
-
-%\textbf{Maestría en Periodismo}
-%
-%\textbf{Facultad de Ciencias Sociales}
-%
-%\textbf{Universidad de Buenos Aires}
-%
-%\textbf{Tesis de Maestría}
-%
-%\textbf{Periodistas en Debate. Aportes al Estudio del Campo Periodístico}
-%
-%\textbf{(2009 -- 2015)}
-%
-%\textbf{Mauro David Dobruskin}
-%
-%\textbf{Director: Dr. Julio Moyano}
-%
-%\textbf{Septiembre 2020}
-
-%\chapter{}
-
+	\else
+	\ifBNPDF
+	\input{./artcap/inicio-frontmatter.tex}
+	\Author{Sumario}
+	\tableofcontents
+		\else
+		\ifPNGEPUB
+		\input{./artcap/inicio-frontmatter.tex}
+		\Author{Sumario}
+		\tableofcontents
+		\fi
+	\fi
+\fi
 
 \chapter{Agradecimientos}
 
@@ -274,14 +267,14 @@ Recientemente, Silvia Cagé (2016: 7, versión digital), en \emph{Salvar los med
 Como señala \textcite[72]{@7009-HUMPHREYS2008} el fenómeno no es reciente.
 
 \begin{quote}
-	\enquote{La preocupación sobre todo por el aumento de costes, la caída de ingresos y la reducción del número de títulos, en particular en la década de 1970, llevó a una serie de países europeos a introducir subvenciones a la prensa. El apoyo indirecto al sector de prensa, generalmente indiscriminado, ha sido algo habitual. Todos los países europeos occidentales han concedido tipos de IVA preferente; la mayoría ha establecido tarifas postales y de telecomunicaciones preferentes y muchos han ofertado precios especiales para el transporte por ferrocarril. También han sido habituales las desgravaciones fiscales por inversiones. Algunos países han subvencionado la prensa escrita, en reconocimiento a sus altos costes de producción. En otros, el Estado ha subvencionado a las agencias nacionales.}
+	La preocupación sobre todo por el aumento de costes, la caída de ingresos y la reducción del número de títulos, en particular en la década de 1970, llevó a una serie de países europeos a introducir subvenciones a la prensa. El apoyo indirecto al sector de prensa, generalmente indiscriminado, ha sido algo habitual. Todos los países europeos occidentales han concedido tipos de IVA preferente; la mayoría ha establecido tarifas postales y de telecomunicaciones preferentes y muchos han ofertado precios especiales para el transporte por ferrocarril. También han sido habituales las desgravaciones fiscales por inversiones. Algunos países han subvencionado la prensa escrita, en reconocimiento a sus altos costes de producción. En otros, el Estado ha subvencionado a las agencias nacionales.
 \end{quote}
 
 
 Cierra su trabajo con una reflexión sobre las nuevas tecnologías:
 
 \begin{quote}
-	\enquote{Por último, puede afirmarse que la convergencia digital ha producido una apremiante necesidad de replanteamiento de las políticas intervencionistas de manera que en el futuro la financiación pública de la comunicación de \enquote{servicio público} dependerá cada vez más de la función, en lugar de ser específica de una determinada tecnología. Para la prensa, ya sea impresa o digital, esto podría implicar un mayor apoyo \rdm{nunca menos} para funciones periodísticas concretas de \enquote{servicio público} amenazadas por la creciente comercialización y competencia entre los distintos medios.} \parencite[80]{@7009-HUMPHREYS2008}
+	Por último, puede afirmarse que la convergencia digital ha producido una apremiante necesidad de replanteamiento de las políticas intervencionistas de manera que en el futuro la financiación pública de la comunicación de \enquote{servicio público} dependerá cada vez más de la función, en lugar de ser específica de una determinada tecnología. Para la prensa, ya sea impresa o digital, esto podría implicar un mayor apoyo \rdm{nunca menos} para funciones periodísticas concretas de \enquote{servicio público} amenazadas por la creciente comercialización y competencia entre los distintos medios \parencite[80]{@7009-HUMPHREYS2008}.
 \end{quote}
 
 
@@ -317,7 +310,7 @@ La actualidad ya no parece circular por la prensa \rdm{digital o de papel} sino 
 En relación con el fenómeno de Internet y la convergencia, circunscribiremos el análisis, exclusivamente al fenómeno periodístico y de producción de actualidad. El período que transitamos se caracteriza por la hiperconcentración de medios, tanto de distribución como de producción de actualidad, generando la existencia de un excedente de mano de obra periodística, determinado por una menor cantidad de productores de actualidad y por la superexplotación del recurso humano abocado a la tarea periodística, cuya producción es reproducida en multiplicidad de medios y formatos. Al decir de \textcite[266-267]{@6960-WINAZKI2000}:
 
 \begin{quote}
-	\enquote{Los nuevos periodistas son ciberproletarios porque se inscriben en una lógica cibermecanicista. Los contenidos que producen se ajustan mecánicamente de acuerdo con la lógica de una línea de producción serial, con una línea de producción neo-manufacturera, que se difunde por la vía virtual y planetaria pero de manera mecánica y fabrilmente ordenada\dots Son ciberproletarios porque en el mapa móvil de las relaciones de producción de la gran maquinaria de la comunicación global ocupan el sitio de los obreros de antaño: no son los dueños del espectáculo, sino la mano de obra operativa que lo configura.}
+	Los nuevos periodistas son ciberproletarios porque se inscriben en una lógica cibermecanicista. Los contenidos que producen se ajustan mecánicamente de acuerdo con la lógica de una línea de producción serial, con una línea de producción neo-manufacturera, que se difunde por la vía virtual y planetaria pero de manera mecánica y fabrilmente ordenada\dots Son ciberproletarios porque en el mapa móvil de las relaciones de producción de la gran maquinaria de la comunicación global ocupan el sitio de los obreros de antaño: no son los dueños del espectáculo, sino la mano de obra operativa que lo configura.
 \end{quote}
 
 
@@ -935,99 +928,99 @@ El análisis de la producción ensayística ordenado en el tiempo permitirá apr
 	\sf\footnotesize\setlength\tabcolsep{4pt}
 	\centering
 	\begin{tabular}{>{\raggedright\arraybackslash}m{3.5cm} | >{\raggedright\arraybackslash}m{2.4cm} | c | >{\raggedright\arraybackslash}m{2.6cm}}
-		\toprule
+	\toprule
 		\textbf{Título y año de edición} & \textbf{Editorial} & \textbf{Nº} & \textbf{Autor} \\
-		\midrule
+	\midrule
 		\textbf{2009} & & & \\
-		\midrule
+	\midrule
 		Diario de guerra. Clarín, el gran engaño argentino & Gárgola & 1 & Claudio Díaz  \\
-		\midrule
+	\midrule
 		\textbf{2010} & & &  \\
-		\midrule
+	\midrule
 		678. La creación de otra realidad & Paidós/Planeta & 2 & María Julia Oliván y Pablo Alabarces \\
-		\midrule
+	\midrule
 		Silencio por sangre & Miradas al sur & 3 & Daniel Cecchiniy Jorge Mancinelli \\
-		\midrule
+	\midrule
 		\textbf{2011} & & & \\
-		\midrule
+	\midrule
 		Pecado original & Planeta & 4 & Graciela Mochkofsky \\
-		\midrule
+	\midrule
 		Perón y los medios de comunicación & Sudamericana PenguinRandom House & 5 & Pablo Sirvén \\
-		\midrule
+	\midrule
 		K Letra bárbara & Sudamericana PenguinRandom House & 6 & Orlando Barone \\
-		\midrule
+	\midrule
 		El kirchnerismo póstumo & Ediciones B & 7 & Jorge Asís \\
-		\midrule
+	\midrule
 		Patria o medios & Sudamericana PenguinRandom House & 8 & Edi Zunino \\
-		\midrule
+	\midrule
 		Periodismo de infantería & Clarinete & 9 & Virginia Márquez y Aníbal Ces \\
-		\midrule
+	\midrule
 		\textbf{2012} & & & \\
-		\midrule
+	\midrule
 		Lanata & Margen Izquierdo & 10 & Luis Majul \\
-		\midrule
+	\midrule
 		\textbf{2013} & & & \\
-		\midrule
+	\midrule
 		Aquel periodismo. Medios y periodistas en la Argentina 1965-2012 & Edhasa & 11 & Daniel Muchnik \\
-		\midrule
+	\midrule
 		Víctor Hugo, una historia de coherencia y convicción & Ediciones al arco & 12 & Julián Capasso \\
-		\midrule
+	\midrule
 		El inventor del peronismo & Planeta & 13 & Silvia Diana Mercado \\
-		\midrule
+	\midrule
 		Máquinas de captura. Los medios concentrados en tiempos del kirchnerismo & Colihue & 14 & Daniel Rosso \\
-		\midrule
+	\midrule
 		Clarín, el gran diario argentino: una historia & Planeta & 15 & Martín Sivak \\
-		\midrule
+	\midrule
 		Años de rabia & Ediciones B & 16 & Eduardo Blaustein \\
-		\midrule
+	\midrule
 		Converso & Margen izquierdo & 17 & Pablo Sirvén \\
-		\midrule
+	\midrule
 		El pequeño Timerman & Ediciones B & 18 & Gabriel Levinas \\
-		\midrule
+	\midrule
 		\textbf{2014} & & & \\
-		\midrule
+	\midrule
 		Nuevos desafíos del periodismo & Ariel /Paidós Planeta- ADEPA & 19 & Daniel Dessein y Gastón Roitberg (Compiladores) \\
-		\midrule
+	\midrule
 		Periodistas en el barro. Peleas, aprietes, traiciones y negocios. Miserias y razones de la guerra mediática en la Argentina reciente & Sudamericana PenguinRandom House & 20 & Edi Zunino \\
-		\midrule
+	\midrule
 		Tiempos turbulentos & Ariel /Paidós Planeta- ADEPA & 21 & Carlos Jornet y Daniel Dessein \\
-		\midrule
+	\midrule
 		Télam, el hecho maldito del periodismo argentino & Ediciones TXT & 22 & Ariel Bargach y Mariano Suárez \\
-		\midrule
+	\midrule
 		(In)justicia mediática & Sudamericana PenguinRandom House & 23 & Darío Villarruel \\
-		\midrule
+	\midrule
 		Audiencia con el diablo & Aguilar & 24 & Víctor Hugo Morales \\
-		\midrule
+	\midrule
 		Las locuras del Rey Jorge & Ediciones B & 25 & Eduardo Blaustein \\
-		\midrule
+	\midrule
 		Guerras mediáticas & Sudamericana PenguinRandom House & 26 & Fernando Ruiz \\
-		\midrule
+	\midrule
 		\textbf{2015} & & & \\
-		\midrule
+	\midrule
 		Quiénes fuimos en la era k & Planeta & 27 & Jorge Fontevecchia \\
-		\midrule
+	\midrule
 		El Perro & Ediciones B & 28 & Hernán López Echague \\
-		\midrule
+	\midrule
 		La inconclusa ley de medios: la historia menos contada & Continente & 29 & Néstor Piccone \\
-		\midrule
+	\midrule
 		Grandes y pequeñas mentiras que nos contaron & Planeta & 30 & Marcos Novaro y Marcelo Birmajer \\
-		\midrule
+	\midrule
 		Doble agente. La biografía inesperada de Horacio Verbitsky & Sudamericana PenguinRandom House & 31 & Gabriel Levinas \\
-		\midrule
+	\midrule
 		Mentime que me gusta & Aguilar & 32 & Víctor Hugo Morales \\
-		\midrule
+	\midrule
 		El rebenque del diablo & Colihue & 33 & Víctor Hugo Morales \\
-		\midrule
+	\midrule
 		Todos contra Branca contra todos & Ediciones B & 34 & Diego Brancatelli \\
-		\midrule
+	\midrule
 		Diez ironías sobre la libertad de expresión & Colectivo de Trabajadores De Prensa (CTP) & 35 & Autores Varios \\
-		\midrule
+	\midrule
 		Clarín, la era Magnetto & Planeta & 36 & Martin ErnestoSivak \\
-		\midrule
+	\midrule
 		Periodistas depordivos & Ediciones al arco & 37 & Walter Vargas \\
-		\bottomrule
-	\end{tabular}
-	\caption{Universo de los libros considerados.}\label{5-1}
+	\bottomrule
+\end{tabular}
+\caption{Universo de los libros considerados.}\label{5-1}
 \end{table}
 
 
@@ -1314,7 +1307,7 @@ El libro tampoco oculta operaciones en igual sentido llevadas a cabo por Francis
 Sirvén realiza una hipérbole histórica, a partir de una implícita petición de principios sobre la veracidad de su libro de 1984. Intenta demostrar que la violación de la libertad de expresión se encuentra, de alguna manera, en la naturaleza misma del peronismo. Si recordamos la perspectiva de Claudio Díaz, todo el libro de Pablo Sirvén parece darle la razón.
 
 \begin{quote}
-	\enquote{La relación de los gobiernos peronistas con la prensa y, particularmente, con los medios audiovisuales ha sido, por lo general, tempestuosa (\dots) El kirchnerismo enlaza esta corriente novedosa combinado con un \emph{déjàvu} de lo realizado por los padres fundadores del justicialismo a mediados del siglo pasado. Con un plus a su favor: lo que entonces parecían \textbf{recortes arbitrarios contra la libertad de expresión} hoy se presentan como necesarias denuncias hacia los \enquote{excesos de las corporaciones mediáticas}, que tienen en sus propios seguidores un núcleo duro de fieles creyentes, y un núcleo blando, mucho más amplio, que sin creer a rajatabla todo lo que dice el Gobierno, ha comenzado a descreer del rol del periodismo tal cual lo conocimos, \textbf{es decir como único intérprete autorizado de la verdad} \parencite[5,20,versión digital]{@6984-SIRVEN2011}.\footnote{El énfasis es propio.}}
+	La relación de los gobiernos peronistas con la prensa y, particularmente, con los medios audiovisuales ha sido, por lo general, tempestuosa (\dots) El kirchnerismo enlaza esta corriente novedosa combinado con un \emph{déjàvu} de lo realizado por los padres fundadores del justicialismo a mediados del siglo pasado. Con un plus a su favor: lo que entonces parecían \textbf{recortes arbitrarios contra la libertad de expresión} hoy se presentan como necesarias denuncias hacia los \enquote{excesos de las corporaciones mediáticas}, que tienen en sus propios seguidores un núcleo duro de fieles creyentes, y un núcleo blando, mucho más amplio, que sin creer a rajatabla todo lo que dice el Gobierno, ha comenzado a descreer del rol del periodismo tal cual lo conocimos, \textbf{es decir como único intérprete autorizado de la verdad} \parencite[5,20,versión digital]{@6984-SIRVEN2011}.\footnote{El énfasis es propio.}
 \end{quote}
 
 
@@ -1325,7 +1318,7 @@ Sirvén, al igual que Saguier, seis años antes, en el Seminario de \emph{Clarí
 Sin embargo, su fe en el credo periodístico lo lleva a considerar que el kirchnerismo convirtió a personas honorables en serviles inmorales.
 
 \begin{quote}
-	\enquote{El peor legado que dejará la era kirchnerista en materia de libertad de expresión no será el diario hostigamiento verbal a medios y a periodistas desde lo más alto del poder, inédito en su persistencia desde el fin de la última dictadura militar, sino \textbf{la captación mediante estímulos económicos} o la prédica pertinaz, casi a manera de adoctrinamiento cerril, de personas y personajes que en otros contextos supieron ser honorables y lúcidos \parencite[38,versión digital]{@6984-SIRVEN2011}.\footnote{El énfasis es propio.}}
+	El peor legado que dejará la era kirchnerista en materia de libertad de expresión no será el diario hostigamiento verbal a medios y a periodistas desde lo más alto del poder, inédito en su persistencia desde el fin de la última dictadura militar, sino \textbf{la captación mediante estímulos económicos} o la prédica pertinaz, casi a manera de adoctrinamiento cerril, de personas y personajes que en otros contextos supieron ser honorables y lúcidos \parencite[38,versión digital]{@6984-SIRVEN2011}.\footnote{El énfasis es propio.}
 \end{quote}
 
 
@@ -1343,14 +1336,14 @@ Así como Pablo Sirvén expresa de manera cabal al campo periodístico de mayor 
 Barone pone énfasis, al igual que Sirvén, en el problema de la libertad de expresión. Sin embargo, desmenuza el discurso oficial del campo periodístico y logra recuperar la profunda relación entre el discurso y la legitimidad de la producción periodística. Dicho desde el interior, desde las entrañas mismas del campo, sus palabras tienen un peso específico mayor. Barone reflexiona a partir del significado del Proyecto de Ley de Servicios de Comunicación Audiovisual afirmando que:
 
 \begin{quote}
-	\enquote{El antioficialismo, común hasta hoy en los grandes medios dominantes, es oficiado por periodistas que graciosamente viven quejándose de que no tienen esa libertad, y entonces hay que creerles y condolerse de ellos. Se asumen como vacas sagradas, y chillan, y patalean, a dúo y armonía con sus empresas si éstas se sienten hipotéticamente damnificadas por el más tenue airecillo crítico o si se las expone en sus negocios y manipuleos informativos con el culo sucio a la vista del público (\dots) Son esa clase de periodistas los que rechazan la chance de que la nueva Ley de Medios se extienda y se haga más variado y más libre el ejercicio del oficio. Entonces se arrebujan, escandalizados de que un nuevo tiempo de libertades venga a salvarlos. ¿De qué?, si no se sienten en peligro sino, por el contrario, protegidos (\dots) Y entonces urden amenazas, se victimizan, deslizan sospechas de corrupción y de sobornos para enlodar el resultado legitimado en el Congreso. Pero aun cuando se retarden los cambios con sinuosidades leguleyas, algo está cambiando. La sociedad ya no ignora quiénes somos los mensajeros ni el mensaje ni el soporte. Se ha pisado el hormiguero. Ha sido como obligar a los medios, amparados en una escenografía privada, a descorrer las cortinas y hacerse públicos. A mostrarse sin el falso escudo de la libertad de prensa. A mostrar la hilacha, el ovillo, el cargamento \parencite[20,28,34,version digital]{@7029-BARONE2011}.}
+	El antioficialismo, común hasta hoy en los grandes medios dominantes, es oficiado por periodistas que graciosamente viven quejándose de que no tienen esa libertad, y entonces hay que creerles y condolerse de ellos. Se asumen como vacas sagradas, y chillan, y patalean, a dúo y armonía con sus empresas si éstas se sienten hipotéticamente damnificadas por el más tenue airecillo crítico o si se las expone en sus negocios y manipuleos informativos con el culo sucio a la vista del público (\dots) Son esa clase de periodistas los que rechazan la chance de que la nueva Ley de Medios se extienda y se haga más variado y más libre el ejercicio del oficio. Entonces se arrebujan, escandalizados de que un nuevo tiempo de libertades venga a salvarlos. ¿De qué?, si no se sienten en peligro sino, por el contrario, protegidos (\dots) Y entonces urden amenazas, se victimizan, deslizan sospechas de corrupción y de sobornos para enlodar el resultado legitimado en el Congreso. Pero aun cuando se retarden los cambios con sinuosidades leguleyas, algo está cambiando. La sociedad ya no ignora quiénes somos los mensajeros ni el mensaje ni el soporte. Se ha pisado el hormiguero. Ha sido como obligar a los medios, amparados en una escenografía privada, a descorrer las cortinas y hacerse públicos. A mostrarse sin el falso escudo de la libertad de prensa. A mostrar la hilacha, el ovillo, el cargamento \parencite[20,28,34,version digital]{@7029-BARONE2011}.
 \end{quote}
 
 
 Barone, de manera similar a Claudio Díaz, reacciona percibiéndose asqueado de ver y verse sumido en la maquinaria de prensa y trata de huir de ella con la esperanza de que la nueva Ley de Medios dé lugar o produzca un nuevo periodismo. \textcite[54,version digital]{@7029-BARONE2011}, citando de memoria a Roger Wolfe, recuerda:
 
 \begin{quote}
-	\enquote{Realmente no sé/ lo que me pasa/ No es asco/ No es hastío/ No es abulia/ No es cansancio/ No es indiferencia/ Son todas esas cosas/ y no es ninguna/ Es como si el mundo/ se me hubiera/ parado/ encima. En mi caso no es para tanto. A mí lo que se me paró encima es el mal oficio que he ejercido tantos años creyéndolo bueno. Así de simple y candoroso. Es menos pesado que el mundo. También me acuerdo de una frase suya: \enquote{Tienes el derecho a expresar libremente todo aquello que te esté permitido decir}.}
+	Realmente no sé/ lo que me pasa/ No es asco/ No es hastío/ No es abulia/ No es cansancio/ No es indiferencia/ Son todas esas cosas/ y no es ninguna/ Es como si el mundo/ se me hubiera/ parado/ encima. En mi caso no es para tanto. A mí lo que se me paró encima es el mal oficio que he ejercido tantos años creyéndolo bueno. Así de simple y candoroso. Es menos pesado que el mundo. También me acuerdo de una frase suya: \enquote{Tienes el derecho a expresar libremente todo aquello que te esté permitido decir}.
 \end{quote}
 
 
@@ -1361,7 +1354,7 @@ El mismo año se publica, \emph{Periodismo de infantería}, de Virginia Márquez
 Los autores realizan una petición de principios: \enquote{Clarín se ha caracterizado por el rechazo sistemático a la agremiación de sus empleados} \parencite[15]{@7004-MARQUEZ2011}. A partir de este principio que guiaría el accionar del diario desde el punto de vista empresario, los autores enhebran elementos diversos que demuestran la subordinación de los intereses periodísticos a los empresarios:
 
 \begin{quote}
-	\enquote{Clarín negocia con Menem la destitución de Liliana López Foresi del noticiero de Canal 13, a cambio del despido de Patricio Kelly de Canal 7 (\dots). También durante las elecciones presidenciales entrevisté a los tres candidatos mejor posicionados. Cavallo me recibió en su bunker de la calle Tagle. Duhalde acudió en persona al diario y aprovechó para saludar a quien se le cruzara, asumiendo su rol en la campaña. A De la Rúa se le permitió responder por escrito. Esa diferencia de trato me dio la certeza: el líder de la Alianza {[}De la Rúa{]} era el candidato elegido por el Holding (\dots). Dicen que las casualidades no existen en política. Tal es así que el mismo 4 de noviembre, día que Clarín procedía al despido de 117 compañeros, se reunía con Magnetto, con el entonces presidente De la Rúa, para ratificar el Decreto que desregulaba la venta de diarios y revistas. Decreto por el cual, el diario, se hacía con la herramienta necesaria para concretar la asfixia económica de los canillitas (\dots). Luego de lo cual, Magnetto, le habría solicitado a Pirillo, que dejara de publicar notas sobre los casos de apropiación y tráfico de bebés, alegando que ese era un tema que dañaba en especial, a la \enquote{señora}. Él es dueño de La Razón, dice haberle confesado esta conversación a dos expresidentes, producto de lo cual, habría resultado en su particular perjuicio \parencite[29,104,106,107]{@7004-MARQUEZ2011}.}
+	Clarín negocia con Menem la destitución de Liliana López Foresi del noticiero de Canal 13, a cambio del despido de Patricio Kelly de Canal 7 (\dots). También durante las elecciones presidenciales entrevisté a los tres candidatos mejor posicionados. Cavallo me recibió en su bunker de la calle Tagle. Duhalde acudió en persona al diario y aprovechó para saludar a quien se le cruzara, asumiendo su rol en la campaña. A De la Rúa se le permitió responder por escrito. Esa diferencia de trato me dio la certeza: el líder de la Alianza {[}De la Rúa{]} era el candidato elegido por el Holding (\dots). Dicen que las casualidades no existen en política. Tal es así que el mismo 4 de noviembre, día que Clarín procedía al despido de 117 compañeros, se reunía con Magnetto, con el entonces presidente De la Rúa, para ratificar el Decreto que desregulaba la venta de diarios y revistas. Decreto por el cual, el diario, se hacía con la herramienta necesaria para concretar la asfixia económica de los canillitas (\dots). Luego de lo cual, Magnetto, le habría solicitado a Pirillo, que dejara de publicar notas sobre los casos de apropiación y tráfico de bebés, alegando que ese era un tema que dañaba en especial, a la \enquote{señora}. Él es dueño de La Razón, dice haberle confesado esta conversación a dos expresidentes, producto de lo cual, habría resultado en su particular perjuicio \parencite[29,104,106,107]{@7004-MARQUEZ2011}.
 \end{quote}
 
 
@@ -1389,7 +1382,7 @@ En el año 2013, desde el punto de vista editorial, los periodistas dominantes d
 Comenzaremos por el texto de Pablo Sirvén, \emph{Converso}, referido a Víctor Hugo Morales. Título de fuerte connotación negativa para definir a un colega, un integrante del espacio periodístico. Suele utilizarse de manera ofensiva hacia alguien que reniega de sus creencias, alguien que ha aceptado una ideología o una creencia religiosa que antes no profesaba, por ejemplo \enquote{judío converso}, \enquote{comunista converso}, etc. La introducción escrita por Jorge Lanata, es aún más dura que estas definiciones.
 
 \begin{quote}
-	\enquote{El peor enemigo del doble discurso es el tiempo: lo desnuda, dejándolo en evidencia. Este libro habla del tiempo y de este tiempo: la historia del converso es siempre la historia de Mefisto (\dots), el \emph{Mephisto}, de István Szabó escrito por Klaus Mann, película ganadora del Oscar en 1981, protagonizada por Klaus Maria Brandauer. El film relata una historia\dots,la de Hendrik Hoefgen, antes autoproclamado como \enquote{actor del pueblo}, bolchevique, que llega a Berlín durante los comienzos del nazismo y, convencido de que \enquote{el arte continúa el estado puro por sobre el resto de las cosas}, pacta con los nazis hasta convertirse en director del Teatro Nacional prusiano, a costa de dejarse usar como objeto propagandístico del régimen (Lanata 2013: 7).}
+	El peor enemigo del doble discurso es el tiempo: lo desnuda, dejándolo en evidencia. Este libro habla del tiempo y de este tiempo: la historia del converso es siempre la historia de Mefisto (\dots), el \emph{Mephisto}, de István Szabó escrito por Klaus Mann, película ganadora del Oscar en 1981, protagonizada por Klaus Maria Brandauer. El film relata una historia\dots,la de Hendrik Hoefgen, antes autoproclamado como \enquote{actor del pueblo}, bolchevique, que llega a Berlín durante los comienzos del nazismo y, convencido de que \enquote{el arte continúa el estado puro por sobre el resto de las cosas}, pacta con los nazis hasta convertirse en director del Teatro Nacional prusiano, a costa de dejarse usar como objeto propagandístico del régimen (Lanata 2013: 7).
 \end{quote}
 
 
@@ -1415,14 +1408,14 @@ Vayamos de a poco.
 Interpreta \textcite[81]{@6983-SIRVEN2013}:
 
 \begin{quote}
-	\enquote{Se sinceró tras regresar a la Argentina. Sudáfrica 2010 fue una pesadilla en la que se encarnaron las peores cosas que a Víctor Hugo Morales, como persona y como relator, no le daban placer. Para colmo, los años no habían pasado en vano y ya no lo esperaban experiencias excitantes como en mundiales anteriores, donde todavía sumaba fama, potencia y juventud. Todo lo contrario a la mala experiencia sudafricana le pasó en el primer mundial que relató en su vida. Si la libertad y el regocijo que se vivía en la Sudáfrica post apartheid lo aburrió, la Argentina de 1978, sumida en una de las dictaduras más feroces que recuerde América latina, lo fascinó.}
+	Se sinceró tras regresar a la Argentina. Sudáfrica 2010 fue una pesadilla en la que se encarnaron las peores cosas que a Víctor Hugo Morales, como persona y como relator, no le daban placer. Para colmo, los años no habían pasado en vano y ya no lo esperaban experiencias excitantes como en mundiales anteriores, donde todavía sumaba fama, potencia y juventud. Todo lo contrario a la mala experiencia sudafricana le pasó en el primer mundial que relató en su vida. Si la libertad y el regocijo que se vivía en la Sudáfrica post apartheid lo aburrió, la Argentina de 1978, sumida en una de las dictaduras más feroces que recuerde América latina, lo fascinó.
 \end{quote}
 
 
 Por si hiciera falta aclararlo, Víctor Hugo Morales, se refiere al partido que España jugó contra los Países Bajos, no a la situación política de Sudáfrica. En relación al Mundial de 1978, \textcite[82]{@6984-SIRVEN2011} encuentra entre las frases más criticables de Víctor Hugo Morales, la siguiente:
 
 \begin{quote}
-	\enquote{Morales se relamió porque los dirigentes de los clubes, que le ocasionaban tanta alergia, habían sido desplazados por los más expeditivos uniformados que tomaron en sus manos la tarea de organizar el certamen internacional. Desde la soberbia fiesta de inauguración \rdm{escribió en noviembre de 1979 en su autobiografía}, hasta el último minuto que duró el torneo, estuve asombrado por el despliegue inteligente, unificado, fervoroso, de los argentinos en torno al evento.}
+	Morales se relamió porque los dirigentes de los clubes, que le ocasionaban tanta alergia, habían sido desplazados por los más expeditivos uniformados que tomaron en sus manos la tarea de organizar el certamen internacional. Desde la soberbia fiesta de inauguración \rdm{escribió en noviembre de 1979 en su autobiografía}, hasta el último minuto que duró el torneo, estuve asombrado por el despliegue inteligente, unificado, fervoroso, de los argentinos en torno al evento.
 \end{quote}
 
 
@@ -1436,21 +1429,21 @@ Luego sobre su relación con la dictadura del Uruguay pregunta:
 No es difícil observar el intento de Sirvén por comparar la dictadura uruguaya con el kirchnerismo. Más abajo avanza \textcite[119]{@6983-SIRVEN2013}:
 
 \begin{quote}
-	\enquote{Y, al fin, hizo un reconocimiento valioso de su pasado auténtico: \enquote{como se verá no hay heroísmos significativos en esta historia}. Exacto: \enquote{no hay heroísmos significativos} en la historia de VHM durante la dictadura en su país. Fue una etapa en la que no se privó de trabajar en los mejores lugares y de escalar hasta puestos relevantes. Nada que cuestionar en ese sentido.}
+	Y, al fin, hizo un reconocimiento valioso de su pasado auténtico: \enquote{como se verá no hay heroísmos significativos en esta historia}. Exacto: \enquote{no hay heroísmos significativos} en la historia de VHM durante la dictadura en su país. Fue una etapa en la que no se privó de trabajar en los mejores lugares y de escalar hasta puestos relevantes. Nada que cuestionar en ese sentido.
 \end{quote}
 
 
 El gobierno dictatorial de Uruguay respalda a Morales contra una suspensión que le impuso la Asociación Uruguaya de Fútbol. \textcite[123]{@6983-SIRVEN2013} lo narra de esta manera:
 
 \begin{quote}
-	\enquote{El general Julio César Rapela, jefe del Estado Mayor Conjunto de las Fuerzas Armadas, también se mostró inquieto con que el silencio impuesto a Morales en los micrófonos futboleros pudiese afectar de alguna manera la imagen del país en el exterior si llegaba a convertirse en tema de debate internacional. Consciente de que era necesario parar la bola de nieve que comenzaba a armarse, el 19 de julio de 1978 el presidente de Uruguay, el dictador Aparicio Méndez, dejó, al fin, sin efecto la resolución de la AUF. Víctor Hugo pudo entonces volver triunfante a sus inconfundibles \enquote{ta-ta-ta} al micrófono. El castigo impuesto en asamblea por la AUF había sido por 45 días fuera del aire y tan sólo llegó a estar silenciado una semana. El vicepresidente de la AUF, Oscar Schiaffarino, confirmó para Relato oculto que \enquote{la decisión no se consultó con el gobierno militar}. En Mundo color, el periodista deportivo agradeció así a las autoridades castrenses que lo reinstalaron frente al micrófono: ---Sentí una cierta vergüenza por haber distraído a nuestros gobernantes en un tema infinitamente menor al que les ocupa día a día. El Gobierno nacional no me ha condecorado, ni respaldado. Fui respaldado en mi prédica. Apenas (pero eso sí, grandemente) fui defendido en los mismos derechos que usted goza\dots ¿Cuáles eran los derechos de los que \enquote{gozaban} los uruguayos por ese entonces? \textbf{La mayoría de las garantías constitucionales estaban arrasadas y en especial la libertad de expresión.} La versión VHM 2012, menos obsecuente que entonces y más envalentonada, le encontró otra vuelta de tuerca para justificar cómo los propios militares anularon la prohibición de la Asociación Uruguaya de Fútbol al afirmar que \enquote{los milicos también se cagan} y que no eran \enquote{tan tontos}. Y agregó:---Cuando vieron que pasaban los días envueltos en un quilombo estúpido, traicionaron a los dirigentes, levantaron la prohibición y los pobres tipos, mis enemigos, renunciaron todos; de rabia más que nada. En esos días en los que yo no podía entrar al estadio venían Edgar Perea, de Colombia, con Fernando Niembro, de la Argentina, muchos más, y trasmitían desde mi cabina. Perea gritaba: \enquote{¡¿dónde estás, Víctor Hugo?!} Entonces dieron vuelta todo y se mandaron una de película. Yo me estaba jugando mi carrera, pensaba. Luché a brazo partido. Los fui a ver. Me victimicé. \textbf{Victimizarse, recuérdese, es una de sus estrategias preferidas desde siempre}.}
+	El general Julio César Rapela, jefe del Estado Mayor Conjunto de las Fuerzas Armadas, también se mostró inquieto con que el silencio impuesto a Morales en los micrófonos futboleros pudiese afectar de alguna manera la imagen del país en el exterior si llegaba a convertirse en tema de debate internacional. Consciente de que era necesario parar la bola de nieve que comenzaba a armarse, el 19 de julio de 1978 el presidente de Uruguay, el dictador Aparicio Méndez, dejó, al fin, sin efecto la resolución de la AUF. Víctor Hugo pudo entonces volver triunfante a sus inconfundibles \enquote{ta-ta-ta} al micrófono. El castigo impuesto en asamblea por la AUF había sido por 45 días fuera del aire y tan sólo llegó a estar silenciado una semana. El vicepresidente de la AUF, Oscar Schiaffarino, confirmó para Relato oculto que \enquote{la decisión no se consultó con el gobierno militar}. En Mundo color, el periodista deportivo agradeció así a las autoridades castrenses que lo reinstalaron frente al micrófono: ---Sentí una cierta vergüenza por haber distraído a nuestros gobernantes en un tema infinitamente menor al que les ocupa día a día. El Gobierno nacional no me ha condecorado, ni respaldado. Fui respaldado en mi prédica. Apenas (pero eso sí, grandemente) fui defendido en los mismos derechos que usted goza\dots ¿Cuáles eran los derechos de los que \enquote{gozaban} los uruguayos por ese entonces? \textbf{La mayoría de las garantías constitucionales estaban arrasadas y en especial la libertad de expresión.} La versión VHM 2012, menos obsecuente que entonces y más envalentonada, le encontró otra vuelta de tuerca para justificar cómo los propios militares anularon la prohibición de la Asociación Uruguaya de Fútbol al afirmar que \enquote{los milicos también se cagan} y que no eran \enquote{tan tontos}. Y agregó:---Cuando vieron que pasaban los días envueltos en un quilombo estúpido, traicionaron a los dirigentes, levantaron la prohibición y los pobres tipos, mis enemigos, renunciaron todos; de rabia más que nada. En esos días en los que yo no podía entrar al estadio venían Edgar Perea, de Colombia, con Fernando Niembro, de la Argentina, muchos más, y trasmitían desde mi cabina. Perea gritaba: \enquote{¡¿dónde estás, Víctor Hugo?!} Entonces dieron vuelta todo y se mandaron una de película. Yo me estaba jugando mi carrera, pensaba. Luché a brazo partido. Los fui a ver. Me victimicé. \textbf{Victimizarse, recuérdese, es una de sus estrategias preferidas desde siempre}.
 \end{quote}
 
 
 Un último ejemplo a los efectos de mostrar el esfuerzo de Sirvén por sacar del campo a Víctor Hugo Morales:
 
 \begin{quote}
-	\enquote{Filippini (jugador de futbol uruguayo) es protagonista del pasado uruguayo de VHM porque una nota radial que le hizo en aquel campeonato del 76, tras un inesperado empate con Nacional, fue el detonante de uno de sus encuentros ríspidos con los militares de la dictadura. --- ¿A quién se lo dedica? ---le preguntó el relator sobre el empate 2-2 de visitante contra Nacional en el Centenario. --- Víctor Hugo, quisiera dedicar estos goles a mi hermano y a todos sus compañeros, que están presos en el penal Libertad --- dijo Filippini. ---Muy bien recibidos, vayan sus saludos ---respondió escueto Morales. Casi un reflejo, tratando de salir lo más pronto posible de algo que, en efecto, lo comprometió. Al día siguiente, el locutor fue citado por las autoridades militares y tras esperar cuatro horas, un coronel lo recibió de mala gana y le hizo escuchar la entrevista, que tenía grabada. --- ¿Qué me puede decir de esto? --- lo interpeló agrio, sobre su diálogo al aire con Filippini. --- Mire, lo que pasa es que uno no escucha el reportaje, está atendiendo 17 cosas de la transmisión, lo dedicó, y la verdad es que no tomé nota de lo que estaba diciendo. Además si hubiera tomado nota, ¿qué le podía decir?\dots nada. Al final me salió un formulismo ---se cubrió Víctor Hugo. --- Bueno, usted me va a entender, tiene tarjeta amarilla ---lo apercibió el coronel. Cuando Filippini se enteró de que Víctor Hugo había tenido problemas lo llamó para disculparse. --- No, por favor, no tenés nada que ver, simplemente te están buscando, te conviene hablar con un coronel que está al mando del operativo --- le recomendó. Cuatro días después, el futbolista llamó al militar que VHM le había recomendado. Le explicó que tenía un hermano y amigos presos en el penal de Libertad, y por eso les había dedicado el gol. --- El operativo de las fuerzas conjuntas termina acá ---respondió lacónico el coronel. A pesar de eso, aquella frase firmó su retiro del fútbol y Filippini tuvo que abandonar su carrera por orden de los militares. Ocurrió en la cuarta fecha del campeonato en el que Defensor Sporting hizo historia \parencite[130,versión digital]{@6983-SIRVEN2013}.}
+	Filippini (jugador de futbol uruguayo) es protagonista del pasado uruguayo de VHM porque una nota radial que le hizo en aquel campeonato del 76, tras un inesperado empate con Nacional, fue el detonante de uno de sus encuentros ríspidos con los militares de la dictadura. --- ¿A quién se lo dedica? ---le preguntó el relator sobre el empate 2-2 de visitante contra Nacional en el Centenario. --- Víctor Hugo, quisiera dedicar estos goles a mi hermano y a todos sus compañeros, que están presos en el penal Libertad --- dijo Filippini. ---Muy bien recibidos, vayan sus saludos ---respondió escueto Morales. Casi un reflejo, tratando de salir lo más pronto posible de algo que, en efecto, lo comprometió. Al día siguiente, el locutor fue citado por las autoridades militares y tras esperar cuatro horas, un coronel lo recibió de mala gana y le hizo escuchar la entrevista, que tenía grabada. --- ¿Qué me puede decir de esto? --- lo interpeló agrio, sobre su diálogo al aire con Filippini. --- Mire, lo que pasa es que uno no escucha el reportaje, está atendiendo 17 cosas de la transmisión, lo dedicó, y la verdad es que no tomé nota de lo que estaba diciendo. Además si hubiera tomado nota, ¿qué le podía decir?\dots nada. Al final me salió un formulismo ---se cubrió Víctor Hugo. --- Bueno, usted me va a entender, tiene tarjeta amarilla ---lo apercibió el coronel. Cuando Filippini se enteró de que Víctor Hugo había tenido problemas lo llamó para disculparse. --- No, por favor, no tenés nada que ver, simplemente te están buscando, te conviene hablar con un coronel que está al mando del operativo --- le recomendó. Cuatro días después, el futbolista llamó al militar que VHM le había recomendado. Le explicó que tenía un hermano y amigos presos en el penal de Libertad, y por eso les había dedicado el gol. --- El operativo de las fuerzas conjuntas termina acá ---respondió lacónico el coronel. A pesar de eso, aquella frase firmó su retiro del fútbol y Filippini tuvo que abandonar su carrera por orden de los militares. Ocurrió en la cuarta fecha del campeonato en el que Defensor Sporting hizo historia \parencite[130,versión digital]{@6983-SIRVEN2013}.
 \end{quote}
 
 
@@ -1467,27 +1460,27 @@ La estructura argumental que utiliza Levinas en el caso Timerman, es similar a l
 
 \textcite{@7006-LEVINAS2013}, en \emph{El pequeño Timerman}, comienza mostrando la debilidad de convicciones en la democracia del joven Héctor.
 \begin{quote}
-	\enquote{La definición y el oportunismo editorial eran inconfundibles; La Tarde contribuyó al clima y apoyó sin rubores el golpe militar que se produjo a los ocho días de su lanzamiento. El título de tapa de la primera edición del diario de Héctor Timerman fue: \enquote{Isabel, ¿sigue gobernando?}. Otro rezaba: \enquote{Costo de vida: nadie lo para}. Abajo, un perseguido por las bandas lopezreguistas contaba sus desventuras bajo el título: \enquote{La AAA quiso asesinarme}\dots.Y en la del 23, día previo al golpe, adelantaba: \enquote{Se afirma en medios responsables que asumiría el poder un gobierno militar; las FF.AA. se disponen a ocupar el vacío de poder para terminar con el caos}. La Tarde del 24 de marzo, a horas de consumado el golpe, elogiaba la \enquote{absoluta normalidad, serenidad y paz pública} de la jornada. El título principal era: \enquote{Prestó juramento la Junta Militar, para reorganizar a la Nación}. El diario elogiaba a los tres miembros de la Junta y, en especial, \enquote{la prolongada y brillante foja de servicios} del almirante Eduardo Emilio Massera \parencite[41]{@7006-LEVINAS2013}.}
+	La definición y el oportunismo editorial eran inconfundibles; La Tarde contribuyó al clima y apoyó sin rubores el golpe militar que se produjo a los ocho días de su lanzamiento. El título de tapa de la primera edición del diario de Héctor Timerman fue: \enquote{Isabel, ¿sigue gobernando?}. Otro rezaba: \enquote{Costo de vida: nadie lo para}. Abajo, un perseguido por las bandas lopezreguistas contaba sus desventuras bajo el título: \enquote{La AAA quiso asesinarme}\dots.Y en la del 23, día previo al golpe, adelantaba: \enquote{Se afirma en medios responsables que asumiría el poder un gobierno militar; las FF.AA. se disponen a ocupar el vacío de poder para terminar con el caos}. La Tarde del 24 de marzo, a horas de consumado el golpe, elogiaba la \enquote{absoluta normalidad, serenidad y paz pública} de la jornada. El título principal era: \enquote{Prestó juramento la Junta Militar, para reorganizar a la Nación}. El diario elogiaba a los tres miembros de la Junta y, en especial, \enquote{la prolongada y brillante foja de servicios} del almirante Eduardo Emilio Massera \parencite[41]{@7006-LEVINAS2013}.
 \end{quote}
 
 Más adelante, señala:
 
 \begin{quote}
-	\enquote{El 29 de marzo, día en que Videla juraba como presidente, el diario de Héctor hizo una enternecedora descripción del jefe del Ejército, que anunció desde la tapa. \enquote{Exclusivo: la infancia del Teniente General Videla}. El reportaje incluía, en la doble central, el testimonio de la maestra de cuarto grado del nuevo presidente. La maestra, fotografiada leyendo La Tarde, decía, entre otras cosas: \enquote{Yo les decía a mis alumnos, `si Sarmiento, siendo de origen tan humilde, llegó a presidente, por qué no puede llegar a serlo uno de ustedes'. Se me dio con Jorge (Videla) y le aseguro que me alegro} \parencite[43]{@7006-LEVINAS2013}.}
+	El 29 de marzo, día en que Videla juraba como presidente, el diario de Héctor hizo una enternecedora descripción del jefe del Ejército, que anunció desde la tapa. \enquote{Exclusivo: la infancia del Teniente General Videla}. El reportaje incluía, en la doble central, el testimonio de la maestra de cuarto grado del nuevo presidente. La maestra, fotografiada leyendo La Tarde, decía, entre otras cosas: \enquote{Yo les decía a mis alumnos, `si Sarmiento, siendo de origen tan humilde, llegó a presidente, por qué no puede llegar a serlo uno de ustedes'. Se me dio con Jorge (Videla) y le aseguro que me alegro} \parencite[43]{@7006-LEVINAS2013}.
 \end{quote}
 
 
 Inicialmente, Héctor Timerman, según Levinas, dio su apoyó al golpe militar y consecuentemente a la dictadura. Luego, habría demostrado falta de solidaridad con un colega en situación similar a la de su padre, al no informar a la familia de Juan Ramón Nazar, la suerte corrida por el director de un diario homónimo de Trenque Lauquen:
 
 \begin{quote}
-	\enquote{Pero, a diferencia de Timerman, que alternó períodos de desaparición y blanqueo y cuyo caso resonó en la prensa mundial, Nazar no estuvo en ninguna lista de detenidos a disposición del Ejecutivo. Durante trece meses y dos días fue oficialmente un desaparecido. Y durante esos trece meses ningún miembro de la familia Timerman se comunicó con la familia Nazar para hacerle saber que Jacobo había visto a Juan Ramón, su colega y director de un diario también llamado La Opinión, en el centro de detención clandestino Puesto Vasco \parencite[68]{@7006-LEVINAS2013}.}
+	Pero, a diferencia de Timerman, que alternó períodos de desaparición y blanqueo y cuyo caso resonó en la prensa mundial, Nazar no estuvo en ninguna lista de detenidos a disposición del Ejecutivo. Durante trece meses y dos días fue oficialmente un desaparecido. Y durante esos trece meses ningún miembro de la familia Timerman se comunicó con la familia Nazar para hacerle saber que Jacobo había visto a Juan Ramón, su colega y director de un diario también llamado La Opinión, en el centro de detención clandestino Puesto Vasco \parencite[68]{@7006-LEVINAS2013}.
 \end{quote}
 
 
 Nuevamente en la página 73:
 
 \begin{quote}
-	\enquote{El 24 de agosto, anteúltimo día de la misión de la SIP en Buenos Aires, fue liberado Juan Ramón Nazar, el exdirector del diario de Trenque Lauquen que había compartido diez días de prisión con Jacobo Timerman en un centro de detención clandestino. Nazar dejó de ser un desaparecido al cabo de trece meses durante los cuales su familia no recibió ninguna llamada, ningún aviso de los Timerman para decirles que Jacobo lo había visto en Puesto Vasco.}
+	El 24 de agosto, anteúltimo día de la misión de la SIP en Buenos Aires, fue liberado Juan Ramón Nazar, el exdirector del diario de Trenque Lauquen que había compartido diez días de prisión con Jacobo Timerman en un centro de detención clandestino. Nazar dejó de ser un desaparecido al cabo de trece meses durante los cuales su familia no recibió ninguna llamada, ningún aviso de los Timerman para decirles que Jacobo lo había visto en Puesto Vasco.
 \end{quote}
 
 
@@ -1618,14 +1611,14 @@ En este trabajo pueden apreciarse, en las voces de Morales y de Capasso, las dif
 Más adelante Capasso reseña la respuesta de Morales a la diputada Elisa Carrió. El debate de la ley de Servicios de Comunicación Audiovisual fue refinando las posiciones alrededor de la misma y distanciando a los integrantes del campo, fundamentalmente alrededor de ella:
 
 \begin{quote}
-	\enquote{Parece atinado defender la libertad de prensa contra lo que sea, como ella dijo, no obstante, algunos ya le hemos agradecido la intención y decimos que si es por nosotros que no se moleste, porque no está en juego la libertad de los periodistas si no, en todo caso, la libertad que gozan los medios, sus dueños. Una libertad que muchas veces se agota en el dueño de la empresa, y ahí termina, que nada tiene que ver con nosotros, los periodistas. Para entendernos mejor vamos a empezar escuchando a Lilita Carrió: \enquote{No tenemos ningún problema en defender los llamados grupos económicos si es para defender la libertad de prensa}. Parece fantástico lo que dice Lilita, sin embargo, quiero dejar un solo ejemplo, por ahora, para permitir un razonamiento más cómodo y que pulveriza, desde mi punto de vista, el razonamiento que presenta Lilita Carrió. Una nueva ley que limite los monopolios es lo mejor que puede sucedernos a los periodistas (Capasso, 2013: 178).}
+	Parece atinado defender la libertad de prensa contra lo que sea, como ella dijo, no obstante, algunos ya le hemos agradecido la intención y decimos que si es por nosotros que no se moleste, porque no está en juego la libertad de los periodistas si no, en todo caso, la libertad que gozan los medios, sus dueños. Una libertad que muchas veces se agota en el dueño de la empresa, y ahí termina, que nada tiene que ver con nosotros, los periodistas. Para entendernos mejor vamos a empezar escuchando a Lilita Carrió: \enquote{No tenemos ningún problema en defender los llamados grupos económicos si es para defender la libertad de prensa}. Parece fantástico lo que dice Lilita, sin embargo, quiero dejar un solo ejemplo, por ahora, para permitir un razonamiento más cómodo y que pulveriza, desde mi punto de vista, el razonamiento que presenta Lilita Carrió. Una nueva ley que limite los monopolios es lo mejor que puede sucedernos a los periodistas (Capasso, 2013: 178).
 \end{quote}
 
 
 Posteriormente, en un largo párrafo, Morales desarrolla aún más su argumentación con ejemplos tomados de la propia realidad periodística del momento:
 
 \begin{quote}
-	\enquote{Te invito a pensarlo de esta manera: tomen mentalmente todas las empresas periodísticas del multimedio más mencionado como destinatario de la ley, tomen las radios del grupo, ahora tomen sus canales y después tomen sus diarios, ahora su agencia de noticia y ahora las decenas y decenas de empresas que el multimedio posee. Imaginen a continuación a sus periodistas, a los más destacados que usted quiera, los que son de los más importantes que hemos tenido de muchos años a esta parte. Ahora imagínelos hablando a favor de la ley de radio difusión, o imagínelos nada más, declarando en otros medios que están a favor. Esto es imposible, entonces el solo hecho de no encontrar una sola voz a favor del proyecto en esos medios, le demuestra que quizás y desde nuestro punto de vista, a la señora Carrió y a la oposición que lo que en realidad sucede es que esos periodistas no tienen la libertad de decir lo que quieren. Ésa es la libertad de prensa que dice la oposición que quiere defender. Y yo insisto, francamente, en pedir que no lo hagan, por lo menos no en nombre de todos los periodistas. Nos hace tanto daño que podemos pensar por lo contrario. Si hay periodistas que perteneciendo a los medios implicados están en contra del proyecto por otras cuestiones, pero no lo pueden decir tampoco. Los multimedios son lo suficientemente dañinos para nuestra profesión, para que no sonemos creíbles, tengamos la posición que tengamos frente a un hecho como este, por ejemplo, de la ley de radiodifusión. Libertad son muchos medios. Libertad es que si me echan de este trabajo porque molesta lo que digo pueda encontrar, rápidamente, otro sitio donde expresarme. Los medios concentrados nos quitan el trabajo, nos condicionan, nos limitan, ahí está uno de los reales enemigos de la libertad de prensa, por lo cual yo discrepo, respetuosamente, con lo que ha dicho Lilita Carrió\dots. (Capasso, 2013: 178).}
+	Te invito a pensarlo de esta manera: tomen mentalmente todas las empresas periodísticas del multimedio más mencionado como destinatario de la ley, tomen las radios del grupo, ahora tomen sus canales y después tomen sus diarios, ahora su agencia de noticia y ahora las decenas y decenas de empresas que el multimedio posee. Imaginen a continuación a sus periodistas, a los más destacados que usted quiera, los que son de los más importantes que hemos tenido de muchos años a esta parte. Ahora imagínelos hablando a favor de la ley de radio difusión, o imagínelos nada más, declarando en otros medios que están a favor. Esto es imposible, entonces el solo hecho de no encontrar una sola voz a favor del proyecto en esos medios, le demuestra que quizás y desde nuestro punto de vista, a la señora Carrió y a la oposición que lo que en realidad sucede es que esos periodistas no tienen la libertad de decir lo que quieren. Ésa es la libertad de prensa que dice la oposición que quiere defender. Y yo insisto, francamente, en pedir que no lo hagan, por lo menos no en nombre de todos los periodistas. Nos hace tanto daño que podemos pensar por lo contrario. Si hay periodistas que perteneciendo a los medios implicados están en contra del proyecto por otras cuestiones, pero no lo pueden decir tampoco. Los multimedios son lo suficientemente dañinos para nuestra profesión, para que no sonemos creíbles, tengamos la posición que tengamos frente a un hecho como este, por ejemplo, de la ley de radiodifusión. Libertad son muchos medios. Libertad es que si me echan de este trabajo porque molesta lo que digo pueda encontrar, rápidamente, otro sitio donde expresarme. Los medios concentrados nos quitan el trabajo, nos condicionan, nos limitan, ahí está uno de los reales enemigos de la libertad de prensa, por lo cual yo discrepo, respetuosamente, con lo que ha dicho Lilita Carrió\dots. (Capasso, 2013: 178).
 \end{quote}
 
 
@@ -1633,7 +1626,8 @@ En otra reflexión sobre la libertad de prensa, que el libro recupera de un repo
 
 \begin{quote}
 	NiaPalos: ---Te escuché decir que la libertad muchas veces se agota en el dueño de la empresa, pero que los periodistas tienen margen de maniobra. ¿Qué alcance tiene eso? ¿Por qué entonces los periodistas son tan consecuentes con los dueños de los medios donde trabajan?
-
+\end{quote}
+\begin{quote}
 	VH: ---Yo creo que tiene que ver con la relación que tienen con el gobierno. Yo no he tenido nunca una actitud de malicia con el gobierno, sino más bien de disgusto. Lo que debe haber es un componente de mucha bronca para que no puedas ver las ventajas de la Ley para los periodistas. Las ventajas son poder decir lo que quieras porque va a generar mucho más laburo. Con cada radio nueva que se forme a partir de la ley, va a haber 20 ó 30 tipos más que van a laburar. Pero además se van a crear situaciones de mercado por las cuales las viejas injusticias de los oligopolios que se quedaron con una porción brutal del mercado van a saltar por los aires y la carrera va a empezar de nuevo. Una de las preguntas que se hacen imbécilmente es por ejemplo cómo van a hacer para sostener la radio, porque conciben un mercado empequeñecido, no conciben un mercado que se amplíe, no conciben que Clarín suelte todo lo que tiene prisionero. Clarín no te permite hacer publicidad en otros medios. (\dots) No pueden estar tan en contra, yo creo que lo que pierde a la mayoría es el resentimiento contra el gobierno en general. Y si vos funcionás desde esa calentura, no ves nada. No era verdad que entraban las telefónicas, pero lo querían ver así. Entonces pedalearon con lo de las telefónicas, se sacaron las telefónicas y pedalearon con lo de la licencia cada dos años. Ninguna de estas cosas nunca fue real (Miradas al Sur, 11 de octubre de 2009, Suple Ni a Palos) (Capasso, 2013: 180).
 \end{quote}
 
@@ -1645,14 +1639,14 @@ Morales, brega por la libertad de expresión, no en abstracto sino en concreto, 
 Eduardo Blaustein publica un verdadero tratado de periodismo que salió con el sugestivo título de \emph{Años de rabia. El periodismo, los medios y las batallas del kirchnerismo}. Realiza un serio intento por desmitificar la profesión y vuelca experiencias personales que intentan quitarle al periodismo su halo de heroísmo y ética moralizante:
 
 \begin{quote}
-	\enquote{Que las derechas, las empresas de medios o generaciones de periodistas algo livianos no se hayan enterado o se muestren distraídas, y que pretendan hablar de la libertad de imprenta como si viviéramos los virginales años del despegue de la prensa escrita hacia 1780, no es culpa del Kirchnerismo.} \parencite[33]{@7023-BLAUSTEIN2013}
+	Que las derechas, las empresas de medios o generaciones de periodistas algo livianos no se hayan enterado o se muestren distraídas, y que pretendan hablar de la libertad de imprenta como si viviéramos los virginales años del despegue de la prensa escrita hacia 1780, no es culpa del Kirchnerismo. \parencite[33]{@7023-BLAUSTEIN2013}
 \end{quote}
 
 
 Sobre la problemática de la libertad de prensa o la censura, Blaustein se atiene a información de fuente reconocida:
 
 \begin{quote}
-	\enquote{En tiempos kirchneristas un examen posible del concepto de objetividad puede hacerse en torno de la discusión de si en nuestro país tenemos o no libertad de prensa. Los sectores opositores sostienen desde hace años, como mínimo, que esas libertades están en peligro inminente o que la libertad de expresión recibe un gancho a la mandíbula detrás del otro. Hay una fuente posible para analizar el tema, opinable, pero que tiene su \enquote{prestigio global}: la gente de Reporteros sin Fronteras. Todos los años esa organización difunde su propia clasificación de \enquote{libertad de prensa}, en la que no se precisa demasiado qué actores contribuyen a más o menos grados de libertad o sobre qué pautas se hacen los rankings. Según Reporteros, como al gordito de Alfonsín, a Argentina no le va tan mal. \enquote{Ocupa un lugar más bien envidiable en la última clasificación mundial}, decía el informe 2011. Nuestro país aparecía en ese informe en el puesto 48 (comparte la posición con Estados Unidos, algo llamativo) en el período 2011-2012 entre 179 naciones. Finlandia, Noruega, Estonia y los Países Bajos encabezaban los índices de \enquote{respeto a las libertades fundamentales}. De las naciones latinoamericanas, a Argentina solo la precedían Costa Rica, Uruguay y El Salvador; en ese orden. Chile ocupaba el puesto 80. Brasil, el 99. México, que desde hace años vive un cuadro desgarrador en buena medida derivado de \enquote{la guerra contra las drogas} (al menos 80 periodistas asesinados desde 2007), aparecía en la ubicación 149. Los subsuelos del horror\textquotesingle, según Reporteros sin Fronteras, eran los que ocupaban, a partir del puesto 175, Siria, Turkmenistán, Corea del Norte y Eritrea.} \parencite[49-50]{@7023-BLAUSTEIN2013}
+	En tiempos kirchneristas un examen posible del concepto de objetividad puede hacerse en torno de la discusión de si en nuestro país tenemos o no libertad de prensa. Los sectores opositores sostienen desde hace años, como mínimo, que esas libertades están en peligro inminente o que la libertad de expresión recibe un gancho a la mandíbula detrás del otro. Hay una fuente posible para analizar el tema, opinable, pero que tiene su \enquote{prestigio global}: la gente de Reporteros sin Fronteras. Todos los años esa organización difunde su propia clasificación de \enquote{libertad de prensa}, en la que no se precisa demasiado qué actores contribuyen a más o menos grados de libertad o sobre qué pautas se hacen los rankings. Según Reporteros, como al gordito de Alfonsín, a Argentina no le va tan mal. \enquote{Ocupa un lugar más bien envidiable en la última clasificación mundial}, decía el informe 2011. Nuestro país aparecía en ese informe en el puesto 48 (comparte la posición con Estados Unidos, algo llamativo) en el período 2011-2012 entre 179 naciones. Finlandia, Noruega, Estonia y los Países Bajos encabezaban los índices de \enquote{respeto a las libertades fundamentales}. De las naciones latinoamericanas, a Argentina solo la precedían Costa Rica, Uruguay y El Salvador; en ese orden. Chile ocupaba el puesto 80. Brasil, el 99. México, que desde hace años vive un cuadro desgarrador en buena medida derivado de \enquote{la guerra contra las drogas} (al menos 80 periodistas asesinados desde 2007), aparecía en la ubicación 149. Los subsuelos del horror\textquotesingle, según Reporteros sin Fronteras, eran los que ocupaban, a partir del puesto 175, Siria, Turkmenistán, Corea del Norte y Eritrea. \parencite[49-50]{@7023-BLAUSTEIN2013}
 \end{quote}
 
 
